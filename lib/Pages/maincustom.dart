@@ -2,7 +2,7 @@ import 'package:facebook/pages/friends.dart';
 import 'package:facebook/pages/marketplace.dart';
 import 'package:facebook/pages/menu.dart';
 import 'package:facebook/pages/newsfeed.dart';
-import 'package:facebook/pages/notification.dart';
+import 'package:facebook/Pages/notification.dart';
 import 'package:facebook/pages/reels.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +21,7 @@ class _MainCustomPageState extends State<MainCustomPage> {
     FriendsPage(),
     Reelspages(),
     MarketPlacePage(),
-    Notificationpage(),
+    NotificationPage(),
     Menupages(),
    ];
 
@@ -48,7 +48,7 @@ class _MainCustomPageState extends State<MainCustomPage> {
           icon: Icon(Icons.local_convenience_store_rounded), 
           label: "Market" ),
         BottomNavigationBarItem(
-            icon: Icon(Icons.notifications), label: "Notifications"),
+            icon: Icon(Icons.notifications), label: "Notification"),
         BottomNavigationBarItem(
           icon: CircleAvatar(
           backgroundImage: AssetImage("assets/profile/pro1.jpg"),

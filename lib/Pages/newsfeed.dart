@@ -1,3 +1,5 @@
+import 'package:facebook/Widget/createpost.dart';
+import 'package:facebook/widgets/newsfeed_post.dart';
 import 'package:flutter/material.dart';
 
 class Newsfeed extends StatefulWidget {
@@ -22,8 +24,21 @@ class _NewsfeedState extends State<Newsfeed> {
           DrawerButton(),
         ],
       ),
-      body: Column(
-        children: [],
+      body: SingleChildScrollView(
+        child: const SingleChildScrollView(
+          child: Column(
+            children: [
+              Createpost(),
+              //storylist(),
+              NewsFeedPost(),
+              NewsFeedPost(
+                name: "Juan",
+                caption: "Having a great day!",
+                imageurl: "assets/myday/myday2.jpg",
+              )
+            ],
+          ),
+        ),
       )
     );
   }
